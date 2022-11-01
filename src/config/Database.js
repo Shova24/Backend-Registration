@@ -10,7 +10,7 @@ const sequelize = new Sequelize("ecrm2_dev", "shova", "bodmaish@shova", {
       rejectUnauthorized: false,
     },
   },
-  // logging: true,
+  logging: false,
 });
 
 export default sequelize;
