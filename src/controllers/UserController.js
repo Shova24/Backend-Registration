@@ -34,7 +34,7 @@ export const loginUser = async (req, res) => {
       res.status(200).json(err.message);
       return;
     }
-    const accessToken = jwt.sign(user, "jwt-secret", { expiresIn: "15s" });
+    const accessToken = jwt.sign(user, "jwt-secret", { expiresIn: "55m" });
     res.status(200).json(accessToken);
   } catch (error) {
     const err = new Error("Something went wrong");
